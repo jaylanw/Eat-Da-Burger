@@ -12,5 +12,21 @@ router.get("/", (req, res) => {
     });
 });
 
+router.post("/", (req, res) => {
+    if (req.body.burger_name === ''){
+      console.log('Enter a burger!')
+    } else {
+      burger.insertOne(req.body.burger_name, function () {
+        res.redirect("/");
+    });
+    }
+});
+
+router.post("/:id", (req, res) => {
+    var id = req.params.id;
+    burger.updateOne(id, function () {
+        res.redirect("/");
+    });
+});
 
 module.exports = router;
