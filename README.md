@@ -6,6 +6,13 @@ Create a burger database and devour the juicy goodness! Check it out for yoursel
  ## Deployed App 
 https://jaylanburger.herokuapp.com/
   
+ ## Usage
+ How to use:
+  - Click on the heroku link
+  - Add a burger to the page
+  - Devour it! 
+  
+  It's that simple!!!
       
 ## Contributors
   Jaylan Wienckowski
