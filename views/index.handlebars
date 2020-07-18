@@ -17,26 +17,31 @@
                     {{/unless}} {{/each}}
                 </ul>
             </div>
-        <div>
-        <div class="pull-right">
-            <h2>You've Devoured These Burgers: </h2>
-            <ul>
-                {{#each burgers}}
-                {{#if this.devoured}}
-                <li>
-                    {{this.burger_name}}
-                </li>
-                {{/if}} {{/each}}
-            </ul>
         </div>
-    </div>
+        <img src="assets/burger.png" class="rounded mx-auto d-block" style="height: 200px;" width="300px">
+
+        <div>
+            <div>
+                <h2>You've Devoured These Burgers: </h2>
+                <ul>
+                    {{#each burgers}}
+                    {{#if this.devoured}}
+                    <li>
+                        {{this.burger_name}}
+                    </li>
+                    {{/if}} {{/each}}
+                </ul>
+            </div>
+        </div>
+
     </div>
 </main>
-<h3>Add a Burger To The Menu!</h3>
- <form class="col-lg-6 offset-lg-3 " method="POST">
-   <div class="row justify-content-center">
-        <input type="text" id="name" name="burger_name" placeholder="Enter your burger here!">
-        <button type="submit" class="addBurgerBtn">Add Burger</button>
-    </form>
-</div>
+<h3 style="text-align: center;">Add a Burger To The Menu!</h3>
+<div class="d-flex justify-content-center align-items-center container ">
+<form class="col-lg-6 offset-lg-3" method="POST">
+    <div class="row">
+        <input type="text" id="name" class="form-control" name="burger_name" placeholder="Enter your burger here!">
+        <button type="submit" class="btn btn-dark">Add Burger</button>
+    </div>
+</form>
 </div>
