@@ -1,20 +1,11 @@
 # Eat-Da-Burger
-
+Create a burger database and devour the juicy goodness! Check it out for yourself!
 
   
   
  ## Deployed App 
-![alt text]()
+https://jaylanburger.herokuapp.com/
   
-
-## Installation 
-- Clone the repo
--  If you don't have the prerequisites installed, make sure to type the following:
-   * npm install inquirer
-   * npm install mysql
-   * npm install console-table
-- Once ready to use command line apllication, type the following:
-  * node index.js
       
 ## Contributors
   Jaylan Wienckowski
