@@ -6,16 +6,16 @@ var burger = {
             cb(res);
         });
     },
-    insertOne: function (val, cb) {
-        orm.insertOne("burgers", "burger_name", val, function (res) {
+    insertOne: function (burger, cb) {
+        orm.insertOne(burger, function (res) {
             cb(res);
         });
     },
-    updateOne: function(colVal, condition, cb) {
-        orm.updateOne( colVal, condition, function(res) {
-          cb(res);
+    updateOne: function (colVal, condition, cb) {
+        orm.updateOne(colVal, condition, function (res) {
+            cb(res);
         });
-      },
+    },
 };
 
 module.exports = burger;

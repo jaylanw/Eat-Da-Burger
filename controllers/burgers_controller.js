@@ -4,17 +4,18 @@ var burger = require("../models/burger.js");
 
 router.get("/", (req, res) => {
     burger.selectAll(function (data) {
-        var burgerObject = {
+        var burgersObject = {
             burgers: data
         };
-        console.log(burgerObject);
-        res.render("index", burgerObject);
+        console.log(burgersObject);
+        res.render("index", burgersObject);
     });
 });
 
 router.post("/", (req, res) => {
+
     if (req.body.burger_name === ''){
-      console.log('Enter a burger!')
+      console.log('not valid')
     } else {
       burger.insertOne(req.body.burger_name, function () {
         res.redirect("/");

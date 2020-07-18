@@ -1,8 +1,8 @@
-<h1>Eat Da Burger!</h1>
+<h1 style="text-align: center;">Eat Da Burger!</h1>
 <main>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="float-left">
+            <div>
                 <h2>Eat This Burger:</h2>
                 <ul>
                     {{#each burgers}}
@@ -17,8 +17,8 @@
                     {{/unless}} {{/each}}
                 </ul>
             </div>
-        </div>
-        <div class="float-right">
+        <div>
+        <div class="pull-right">
             <h2>You've Devoured These Burgers: </h2>
             <ul>
                 {{#each burgers}}
@@ -30,9 +30,10 @@
             </ul>
         </div>
     </div>
+    </div>
 </main>
 <h3>Add a Burger To The Menu!</h3>
- <form class="col-lg-6 offset-lg-3 ">
+ <form class="col-lg-6 offset-lg-3 " method="POST">
    <div class="row justify-content-center">
         <input type="text" id="name" name="burger_name" placeholder="Enter your burger here!">
         <button type="submit" class="addBurgerBtn">Add Burger</button>
